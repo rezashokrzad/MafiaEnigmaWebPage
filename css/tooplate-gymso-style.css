@@ -742,10 +742,11 @@
   }
   .site-footer .list li {
     
-	padding-bottom:5px;
+	padding-bottom:10px;
   } 
   .site-footer p {
     font-size: var(--base-font-size);
+	font-weight:bold;
   }
 
   .contact .fa,
@@ -862,7 +863,7 @@
 .carousel-control{
 	width:30%;
 	position:absolute;
-	bottom:100px;
+	bottom:50px;
 	left:0;
 }
  @media screen and (max-width: 767px) {
@@ -904,12 +905,24 @@
     opacity: .5;
     transition: opacity .6s ease;
 }
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    display: table;
+}
 
 .btn-search {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 5px;
     z-index: 1;
     display: -ms-flexbox;
@@ -924,7 +937,7 @@
     text-align: center;  
     transition: opacity .15s ease;
     border-radius: 50%;
-	background:#f13a11;
+	background:var(--primary-color);
 	border:0px;
 }
 
@@ -1340,15 +1353,8 @@
 	background:#252535;
 	border:0px;
 }
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    top: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    display: table;
+
+.list {
+	list-style-type: none;
+	padding-left: 0;
 }
