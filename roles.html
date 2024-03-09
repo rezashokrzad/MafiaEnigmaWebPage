@@ -12,7 +12,9 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/aos.css">
-		<link rel="stylesheet" href="css/style.css">		
+		<link rel="stylesheet" href="css/style.css">	
+
+			
 	</head>
 	<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
@@ -59,25 +61,33 @@
 
 			</div>
 		</nav>
+
+<!--------------------------------------- body ---------------------------------------->				
 		
 		<section class="section pt-5 mt-5">
 			<div class="container gray-dark">
 				<div class="row">
-					<div class="col-lg-12 col-12 text-center mb-5">
-                        <h3 class="mt-lg-5 mb-4 text-danger">Roles</h3>
+					<div class="col-lg-12 col-12 text-center mb-6">
+                        <h2 class="mt-lg-5 mb-4 text-danger">Roles Guidance</h2>
                     </div>
 					
 					<div class="col-12">
 						<div class="class-thumb">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-4 py-3 px-2 text-center">
-										<img src="images/class/maf.png" class="border-img img-roles" alt="Class">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Villager.png" class="img-roles" alt="Class">
 									</div>
-									<div class="col-md-8">
+									<div class="col-md-10">
 										<div class="card-body">
-											<h5 class="card-title text-white line">Villager</h5>
-											<p class="card-text text-dark-light">This group includes the vigilant Doctor, the astute Detective, the armored Knight, and other unique characters, each with a special ability. Among them lurks a Traitor, whose loyalty is a riddle itself.</p>
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Villager</h4></button>
+											<div class="content">
+												<p>
+													The Villager role is a key component of the civilian group in the Mafia game, lacking special powers but essential for game dynamics. Villagers engage in daily discussions, using intuition and logic to identify Mafia members. Their ability to observe, persuade, and deduce is crucial for eliminating Mafia and winning the game. Although without abilities, their collective decision-making and strategizing are vital. Villagers must discern truth from deception to protect themselves and identify Mafia members. Their strength lies in numbers and the collective wisdom in discussions. Every Villager's voice and vote are crucial in unmasking and defeating the Mafia.
+												</p>
+											</div>
+										
 										</div>
 									</div>
 								</div>
@@ -89,77 +99,225 @@
 						<div class="class-thumb">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-4 py-3 px-2 text-center">
-										<img src="images/class/Dr.Lecter.png" class="border-img img-roles" alt="Class">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Mafia.png" class="img-roles" alt="Class">
 									</div>
-									<div class="col-md-8">
+									<div class="col-md-10">
 										<div class="card-body">
-											<h5 class="card-title text-white line">Dr. Lecter</h5>
-											<p class="card-text text-dark-light">Mafia's guardian angel with a twist! They dodge sniper bullets for their team - except for the boss, who's already bulletproof. Talk about selective saving!</p>
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Mafia</h3></button>
+											<div class="content">
+												<p>
+													Mafia members must lie throughout the game and pretend to be Villager. Mafia role is arguably the most challenging in the game, as other players may soon realize you are deceiving them. Mafia team must collaborate and think strategically during the day phase for success. At night, Mafia group must select one person to eliminate. The chosen individual, unless saved by the Doctor, will be removed from subsequent rounds of the game.
+												</p>
+											</div>
+										
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>     
-					
+					</div>   
+
 					<div class="col-12">
 						<div class="class-thumb">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-4 py-3 px-2 text-center">
-										<img src="images/class/thief.png" class="border-img img-roles" alt="Class">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Doctor.png" class="img-roles" alt="Class">
 									</div>
-									<div class="col-md-8">
+									<div class="col-md-10">
 										<div class="card-body">
-											<h5 class="card-title text-white line">Thief</h5>
-											<p class="card-text text-dark-light">The Mafia's cunning role swiper! They steal and redirect the abilities of the Doctor, Sniper, or Gunner twice a game. Watch out, targeting the Detective means game over for them!</p>
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Doctor</h3></button>
+											<div class="content">
+												<p>
+													Doctor is one of Villagers. Each night, after the Mafia chooses someone to eliminate, Doctor can attempt to save a player who they think the Mafia has targeted. If Doctor correctly guesses and saves the right player, that player returns to the game; otherwise, the targeted player is eliminated. It's important to note that Doctor cannot save themselves two nights in a row. Therefore, if Doctor's role is revealed to Mafia, they are likely to be targeted and eliminated the following night.
+												</p>
+											</div>
+										
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div> 
-					
+
+
 					<div class="col-12">
 						<div class="class-thumb">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-4 py-3 px-2 text-center">
-										<img src="images/class/joker.png" class="border-img img-roles" alt="Class">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Mafia boss.png" class="img-roles" alt="Class">
 									</div>
-									<div class="col-md-8">
+									<div class="col-md-10">
 										<div class="card-body">
-											<h5 class="card-title text-white line">Joker</h5>
-											<p class="card-text text-dark-light">Mafia's wild card! (S)he twists detective reports twice a game, making truth and lies a guessing game.</p>
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Mafia Boss</h3></button>
+											<div class="content">
+												<p>
+													The role of Mafia Boss is the leader of the Mafia group. Beyond possessing all the characteristics of a regular Mafia member, Mafia Boss has special attributes that distinguish their role. Firstly, when the Detective conducts their initial inquiry, the result for Mafia Boss will be negative, indicating that they are not a member of Mafia. Additionally, the Sniper is unable to eliminate Mafia Boss with their shot. Also, in the event of a tie in Mafia's votes during the night, Mafia Boss's vote will be the deciding factor in choosing the night's victim.
+												</p>
+											</div>
+										
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div> 
-					
+
 					<div class="col-12">
 						<div class="class-thumb">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-4 py-3 px-2 text-center">
-										<img src="images/class/bomber.png" class="border-img img-roles" alt="Class">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Detective.png" class="img-roles" alt="Class">
 									</div>
-									<div class="col-md-8">
+									<div class="col-md-10">
 										<div class="card-body">
-											<h5 class="card-title text-white line">Bomberman</h5>
-											<p class="card-text text-dark-light">Mafia's crafty bomb expert! (S)he plants a choice of wires - red or blue - on players at night. Guess wrong, and boom! Even the armored can't escape.</p>
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Detective</h3></button>
+											<div class="content">
+												<p>
+													Detective is considered part of Villagers' group. Each night, after Doctor's turn, Detective can point to someone they suspect is part of Mafia. Moderator will then inform Detective whether the chosen individual is indeed Mafia or not. The role of Detective could be considered the most intriguing in Mafia game; as they gradually uncover the identities of various players, they can subtly unite citizens against Mafia or one of its members. However, if Detective's role is revealed to Mafia, they are likely to be targeted and killed during the night! Additionally, Detective's first inquiry about Mafia Boss will return a negative result, even if Mafia Boss has been jokered.
+												</p>
+											</div>
+										
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div> 
+
+					<div class="col-12">
+						<div class="class-thumb">                                   
+							<div class="card gray-dark">
+								<div class="row no-gutters">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Oracle.png" class="img-roles" alt="Class">
+									</div>
+									<div class="col-md-10">
+										<div class="card-body">
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Oracle</h3></button>
+											<div class="content">
+												<p>
+													a member of the Mafia group in a game. In addition to the basic abilities of a regular Mafia member, the Oracle possesses a unique power that can be used twice throughout the game. The Oracle has the capability to guess the role of one of the citizens during any given day by selecting their own role. If the Oracle's guess is correct, the targeted individual will be eliminated from the game at the end of the day. However, if the Oracle's guess is incorrect, no one is eliminated. Citizens, especially the detective, must be careful not to reveal their roles, as they run the risk of being targeted and eliminated by the Oracle.
+												</p>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+
+					<div class="col-12">
+						<div class="class-thumb">                                   
+							<div class="card gray-dark">
+								<div class="row no-gutters">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Guardian.png" class="img-roles" alt="Class">
+									</div>
+									<div class="col-md-10">
+										<div class="card-body">
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Oracle</h3></button>
+											<div class="content">
+												<p>
+													Guardian is considered a member of the Villagers' group. As the name suggests, their armor prevents them from being killed in a daytime vote once. After one attempt to kill Guardian during the day, their armor is considered used up and no longer functional. If Guardian is chosen to be killed in a daytime vote, they will not die, but naturally, everyone will become aware of their role. On the other hand, if Guardian is selected by Mafia to be killed at night and still has their armor, they will not die, and their role will not be revealed, as Mafia may assume the individual was a villager saved by Doctor. However, if Guardian still has their armor and Oracle correctly guesses their role, Guardian will be killed just like any other citizen if the Oracle's guess is correct.
+												</p>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+
+					<div class="col-12">
+						<div class="class-thumb">                                   
+							<div class="card gray-dark">
+								<div class="row no-gutters">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Dr. Lecter.png" class="img-roles" alt="Class">
+									</div>
+									<div class="col-md-10">
+										<div class="card-body">
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Dr. Lecter</h3></button>
+											<div class="content">
+												<p>
+													Doctor Lecter is a member of the Mafia group who can protect the Mafia from the Sniper's bullet. Therefore, if the Sniper targets a Mafia member and Doctor Lecter also saves them, nothing happens. Given that the Mafia Boss inherently does not die from the Sniper's bullet, it is better for Doctor Lecter not to save the Mafia Boss (or Godfather) and instead choose another Mafia member to save.
+												</p>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+
+					<div class="col-12">
+						<div class="class-thumb">                                   
+							<div class="card gray-dark">
+								<div class="row no-gutters">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Snipper.png" class="img-roles" alt="Class">
+									</div>
+									<div class="col-md-10">
+										<div class="card-body">
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Snipper</h3></button>
+											<div class="content">
+												<p>
+													Sniper is part of the citizens' team and has the ability to use their shot to eliminate a Mafia member, but only on one night. It's crucial to note that if the Sniper's target is not a Mafia member, the Sniper themselves will be eliminated. Therefore, the Sniper should only take their shot when they are certain of their target's Mafia affiliation. Additionally, if the Sniper's shot hits the Mafia Boss, nothing happens, but the Sniper loses their shot.
+												</p>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+
+					<div class="col-12">
+						<div class="class-thumb">                                   
+							<div class="card gray-dark">
+								<div class="row no-gutters">
+									<div class="col-md-2 py-4 px-2 text-center">
+										<img src="images/class/roles/Thief.png" class="img-roles" alt="Class">
+									</div>
+									<div class="col-md-10">
+										<div class="card-body">
+											
+											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Thief</h3></button>
+											<div class="content">
+												<p>
+													The Thief is a member of the Mafia and has the ability to steal the roles of citizens who act at night, but only up to two times. The process involves the Thief selecting two players during the night. The first player is the one whose role is stolen (e.g., the Doctor), and the second player is the one upon whom the stolen ability is used. For example, if the first player is the Doctor and the Thief chooses Daniel as the second player, then Daniel is saved, even though the real Doctor might have chosen someone else. If the first player is the Sniper and takes a shot, the shot affects the second player chosen by the Thief. And if the first player is the Gunner and gives a war bullet, it will be given to the second player chosen by the Thief. However, there's a catch: if the first player whose role the Thief tries to steal is the Detective, the Thief gets "arrested" and loses their ability. The Thief can only steal the roles of the Doctor, Sniper, and Gunner; any other choices are ineffective.
+												</p>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+
+
+					
 				</div>
 			</div>
 		</section>
-				
+<!--------------------------------------- Footer ---------------------------------------->				
 	  	<footer class="site-footer">
 			<div class="container">
 				<div class="row">
@@ -211,7 +369,8 @@
 							</div>
 						</div>
 					</div>
-										
+						
+					
 					<div class="col-12 text-center copyright">
 						<a href="https://mafiaenigma.com/">Copyright 2024  MafiaEnigma</a></p>
 					</div>
