@@ -1388,7 +1388,7 @@
 
 .row.no-gutters {
   display: flex;
-  align-items: center;
+  align-items: top;
 }
 
 
@@ -1435,11 +1435,22 @@
   box-shadow: #212529; */
 }
 
-/* .active:after { */
-  /* content: "\02796"; Unicode character for "minus" sign (-) */
-/* } */
+/* more button */
+.more-button {
+  padding: 6px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
 
-/* Change plus to minus when collapsible content is shown
-.collapsible[aria-expanded="true"]::after {
-  content: '-';
-} */
+.more-button:hover {
+  background-color: #212529;
+}
+
+.more-button:focus {
+  outline: none; /* Removes the outline on focus */
+}

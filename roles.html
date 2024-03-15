@@ -63,7 +63,23 @@
 		</nav>
 
 <!--------------------------------------- body ---------------------------------------->				
-		
+		<script>
+		// JavaScript function here
+		function toggleMore(sectionId) {
+			var moreText = document.getElementById(sectionId);
+			var buttonText = document.querySelector('button[onclick="toggleMore(\'' + sectionId + '\')"]');
+
+			if (moreText.style.display === "none") {
+				moreText.style.display = "block";
+				buttonText.textContent = "Less";
+			} else {
+				moreText.style.display = "none";
+				buttonText.textContent = "More";
+			}
+		}
+		</script>
+
+
 		<section class="section pt-5 mt-5">
 			<div class="container gray-dark">
 				<div class="row">
@@ -75,21 +91,29 @@
 						<div class="class-thumb">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-2 py-4 px-2 text-center">
-										<img src="images/class/roles/Villager.png" class="img-roles" alt="Class">
+									 <div class="col-md-4 text-center">
+										<iframe width="100%" height="200" src="https://www.youtube.com/embed/aGdM-WUzyIo?si=kKblZP5TdVEsZuTb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
-									<div class="col-md-10">
+									<div class="col-md-8">
 										<div class="card-body">
-											
-											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Villager</h4></button>
-											<div class="content">
-												<p>
-													The Villager role is a key component of the civilian group in the Mafia game, lacking special powers but essential for game dynamics. Villagers engage in daily discussions, using intuition and logic to identify Mafia members. Their ability to observe, persuade, and deduce is crucial for eliminating Mafia and winning the game. Although without abilities, their collective decision-making and strategizing are vital. Villagers must discern truth from deception to protect themselves and identify Mafia members. Their strength lies in numbers and the collective wisdom in discussions. Every Villager's voice and vote are crucial in unmasking and defeating the Mafia.
+											<h3 class="card-title text-white line">Villager</h3>
+											<div class="openinig-text">
+												<p class="preview-text">
+													The Villager role is a key component of the civilian group in the Mafia game, lacking special powers but essential for game dynamics. Villagers engage in daily discussions, using intuition and logic to identify Mafia members. 
 												</p>
 											</div>
-										
+
+											<button onclick="toggleMore('villager')" class="more-button">
+												more
+											</button>
+											<div id="villager" class="more-content" style="display: none;">
+												<p>
+													Their ability to observe, persuade, and deduce is crucial for eliminating Mafia and winning the game. Although without abilities, their collective decision-making and strategizing are vital. Villagers must discern truth from deception to protect themselves and identify Mafia members. Their strength lies in numbers and the collective wisdom in discussions. Every Villager's voice and vote are crucial in unmasking and defeating the Mafia.
+												</p>
+											</div>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
@@ -99,16 +123,24 @@
 						<div class="class-thumb">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-2 py-4 px-2 text-center">
-										<img src="images/class/roles/Mafia.png" class="img-roles" alt="Class">
+									<div class="col-md-4">
+										<iframe width="100%" height="200" src="https://www.youtube.com/embed/vvxPMf2fJp0?si=uKLCAto_GhqBJLAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
-									<div class="col-md-10">
+									<div class="col-md-8">
 										<div class="card-body">
-											
-											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Mafia</h3></button>
-											<div class="content">
+											<h3 class="card-title text-white line">Mafia</h3>
+											<div class="openinig-text">
+												<p class="preview-text">
+													Mafia members must lie throughout the game and pretend to be Villager. Mafia role is arguably the most challenging in the game, as other players may soon realize you are deceiving them.
+												</p>
+											</div>
+
+											<button onclick="toggleMore('mafia')" class="more-button">
+											more
+											</button>
+											<div id="mafia" class="more-content" style="display: none;">
 												<p>
-													Mafia members must lie throughout the game and pretend to be Villager. Mafia role is arguably the most challenging in the game, as other players may soon realize you are deceiving them. Mafia team must collaborate and think strategically during the day phase for success. At night, Mafia group must select one person to eliminate. The chosen individual, unless saved by the Doctor, will be removed from subsequent rounds of the game.
+													Mafia team must collaborate and think strategically during the day phase for success. At night, Mafia group must select one person to eliminate. The chosen individual, unless saved by the Doctor, will be removed from subsequent rounds of the game.
 												</p>
 											</div>
 										
