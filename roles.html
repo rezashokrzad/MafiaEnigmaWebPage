@@ -72,9 +72,11 @@
 			if (moreText.style.display === "none") {
 				moreText.style.display = "block";
 				buttonText.textContent = "Less";
+				buttonText.classList.add('active');
 			} else {
 				moreText.style.display = "none";
 				buttonText.textContent = "More";
+				buttonText.classList.remove('active');
 			}
 		}
 		</script>
@@ -86,20 +88,21 @@
 					<div class="col-lg-12 col-12 text-center mb-6">
                         <h2 class="mt-lg-5 mb-4 text-danger">Roles Guidance</h2>
                     </div>
-					
+					<!----------------------------------Villager------------------------------->
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									 <div class="col-md-4 text-center">
-										<iframe width="100%" height="200" src="https://www.youtube.com/embed/aGdM-WUzyIo?si=kKblZP5TdVEsZuTb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+										<div class="responsive-iframe">
+											<iframe src="https://www.youtube.com/embed/aGdM-WUzyIo?si=kKblZP5TdVEsZuTb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>									</div>
 									<div class="col-md-8">
 										<div class="card-body">
 											<h3 class="card-title text-white line">Villager</h3>
 											<div class="openinig-text">
 												<p class="preview-text">
-													The Villager role is a key component of the civilian group in the Mafia game, lacking special powers but essential for game dynamics. Villagers engage in daily discussions, using intuition and logic to identify Mafia members. 
+													The Villager role is a key component of the civilian group in the Mafia game, lacking special powers but essential for game dynamics. 
 												</p>
 											</div>
 
@@ -108,7 +111,7 @@
 											</button>
 											<div id="villager" class="more-content" style="display: none;">
 												<p>
-													Their ability to observe, persuade, and deduce is crucial for eliminating Mafia and winning the game. Although without abilities, their collective decision-making and strategizing are vital. Villagers must discern truth from deception to protect themselves and identify Mafia members. Their strength lies in numbers and the collective wisdom in discussions. Every Villager's voice and vote are crucial in unmasking and defeating the Mafia.
+													Villagers engage in daily discussions, using intuition and logic to identify Mafia members. Their ability to observe, persuade, and deduce is crucial for eliminating Mafia and winning the game. Although without abilities, their collective decision-making and strategizing are vital. Villagers must discern truth from deception to protect themselves and identify Mafia members. Their strength lies in numbers and the collective wisdom in discussions. Every Villager's voice and vote are crucial in unmasking and defeating the Mafia.
 												</p>
 											</div>
 										</div>
@@ -118,20 +121,22 @@
 							</div>
 						</div>
 					</div>   
-					
+					<!----------------------------------Mafia------------------------------->
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-4">
-										<iframe width="100%" height="200" src="https://www.youtube.com/embed/vvxPMf2fJp0?si=uKLCAto_GhqBJLAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<div class="responsive-iframe">
+											<iframe width="100%" height="200" src="https://www.youtube.com/embed/vvxPMf2fJp0?si=uKLCAto_GhqBJLAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
 									</div>
 									<div class="col-md-8">
 										<div class="card-body">
 											<h3 class="card-title text-white line">Mafia</h3>
 											<div class="openinig-text">
 												<p class="preview-text">
-													Mafia members must lie throughout the game and pretend to be Villager. Mafia role is arguably the most challenging in the game, as other players may soon realize you are deceiving them.
+													Mafia members must lie throughout the game and pretend to be Villager. Mafia role is arguably the most challenging in the game, as ...
 												</p>
 											</div>
 
@@ -140,7 +145,7 @@
 											</button>
 											<div id="mafia" class="more-content" style="display: none;">
 												<p>
-													Mafia team must collaborate and think strategically during the day phase for success. At night, Mafia group must select one person to eliminate. The chosen individual, unless saved by the Doctor, will be removed from subsequent rounds of the game.
+													... other players may soon realize you are deceiving them. Mafia team must collaborate and think strategically during the day phase for success. At night, Mafia group must select one person to eliminate. The chosen individual, unless saved by the Doctor, will be removed from subsequent rounds of the game.
 												</p>
 											</div>
 										
@@ -150,21 +155,30 @@
 							</div>
 						</div>
 					</div>   
-
+					<!----------------------------------Doctor------------------------------->
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
-									<div class="col-md-2 py-4 px-2 text-center">
-										<img src="images/class/roles/Doctor.png" class="img-roles" alt="Class">
+									<div class="col-md-4">
+										<div class="responsive-iframe">
+											<iframe width="100%" height="200" src="https://www.youtube.com/embed/y4SKmlz65mw?si=_khVZGeIcR6WeKC-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
 									</div>
-									<div class="col-md-10">
+									<div class="col-md-8">
 										<div class="card-body">
-											
-											<button class="collapsible" data-toggle="collapse"><h3 class="card-title text-white line">Doctor</h3></button>
-											<div class="content">
+											<h3 class="card-title text-white line">Doctor</h3>
+											<div class="openinig-text">
+												<p class="preview-text">
+													Doctor is one of Villagers. Each night, after the Mafia chooses someone to eliminate, Doctor can attempt to save a player who they think the Mafia has targeted.
+												</p>
+											</div>
+											<button  onclick="toggleMore('doctor')" class="more-button">
+											more
+											</button>
+											<div id="doctor" class="more-content" style="display: none;">
 												<p>
-													Doctor is one of Villagers. Each night, after the Mafia chooses someone to eliminate, Doctor can attempt to save a player who they think the Mafia has targeted. If Doctor correctly guesses and saves the right player, that player returns to the game; otherwise, the targeted player is eliminated. It's important to note that Doctor cannot save themselves two nights in a row. Therefore, if Doctor's role is revealed to Mafia, they are likely to be targeted and eliminated the following night.
+													If Doctor correctly guesses and saves the right player, that player returns to the game; otherwise, the targeted player is eliminated. It's important to note that Doctor cannot save themselves two nights in a row. Therefore, if Doctor's role is revealed to Mafia, they are likely to be targeted and eliminated the following night.
 												</p>
 											</div>
 										
@@ -175,9 +189,9 @@
 						</div>
 					</div> 
 
-
+					<!----------------------------------Mafia Boss------------------------------->
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-2 py-4 px-2 text-center">
@@ -201,7 +215,7 @@
 					</div> 
 
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-2 py-4 px-2 text-center">
@@ -225,7 +239,7 @@
 					</div> 
 
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-2 py-4 px-2 text-center">
@@ -249,7 +263,7 @@
 					</div> 
 
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-2 py-4 px-2 text-center">
@@ -273,7 +287,7 @@
 					</div> 
 
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-2 py-4 px-2 text-center">
@@ -297,7 +311,7 @@
 					</div> 
 
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-2 py-4 px-2 text-center">
@@ -321,7 +335,7 @@
 					</div> 
 
 					<div class="col-12">
-						<div class="class-thumb">                                   
+						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
 								<div class="row no-gutters">
 									<div class="col-md-2 py-4 px-2 text-center">
