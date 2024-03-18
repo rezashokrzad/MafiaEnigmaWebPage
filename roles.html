@@ -72,12 +72,17 @@
 			if (moreText.style.display === "none") {
 				moreText.style.display = "block";
 				buttonText.textContent = "Less";
-				buttonText.classList.add('active');
+				buttonText.style.backgroundColor = '#dc3545';
 			} else {
 				moreText.style.display = "none";
 				buttonText.textContent = "More";
-				buttonText.classList.remove('active');
+				buttonText.style.backgroundColor = '#dc3545';
 			}
+			// Reset the button color after 3 seconds
+			setTimeout(function() {
+            buttonText.style.backgroundColor = '';
+			buttonText.blur();
+        	}, 1000); // 1000 milliseconds = 1 seconds
 		}
 		</script>
 
