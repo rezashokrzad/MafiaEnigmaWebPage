@@ -380,7 +380,6 @@
     opacity: 0.90;
   }
 
-
   /*---------------------------------------
      MODAL              
   -----------------------------------------*/
@@ -449,6 +448,9 @@
 
   .navbar .social-icon li a {
     color: var(--white-color);
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
   }
 
   .navbar-toggler {
@@ -630,6 +632,7 @@
   .table td, .table th {
     padding: 1rem;
   }
+
 
 
   /*---------------------------------------
@@ -831,6 +834,7 @@
     .contact h2 span {
       display: block;
     }
+    
   }
   
   .carousel-control-next, .carousel-control-prev {
@@ -1351,13 +1355,14 @@
 .thumb-bottom {    
     display: flex;
     align-items: flex-end;
+    margin-top: -50px
 }
 .thumb-bottom img{    
-    border: 6px solid #ababab;
+    border: 0px solid #ababab;
     border-bottom: 0px;
     border-radius: 15px 15px 0px 0px;
     height: 80%;
-	margin: 0px auto 0px auto;
+    margin: 0px auto 0px auto;
 }
 
 .border-img{
@@ -1477,8 +1482,8 @@
 
 /* Adjust margins and paddings as needed */
 .card-body {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .video-spacing {
