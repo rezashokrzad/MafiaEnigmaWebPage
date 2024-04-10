@@ -1489,3 +1489,42 @@
 .video-spacing {
   margin-bottom: 20px; /* Adjust the value as needed */
 }
+
+
+.carousel-container {
+  position: relative;
+}
+
+.vertical-text-container {
+  position: absolute;
+  right: 0;
+  top: 52%;
+  transform: translate(-25%, 50%) rotate(90deg);
+  transform-origin: bottom right;
+  color: #dc3545; 
+  z-index: 10;
+}
+
+.vertical-text {
+  white-space: nowrap;
+  font-size: 40px; 
+  font-weight: bold;
+  letter-spacing: 0.00001em;
+}
+
+.text-with-shadow {
+  text-shadow: 4px 4px 4px rgb(220, 53, 69,0.5);
+}
+
+.vertical-text-container_2 {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  transform: translate(-100%, -30%) rotate(-90deg);
+  transform-origin: bottom right;
+  color: #3eb567; 
+  z-index: 10;
+}
+.text-with-shadow_2 {
+  text-shadow: 4px 4px 4px rgb(62, 181, 103, 0.5);
+}
