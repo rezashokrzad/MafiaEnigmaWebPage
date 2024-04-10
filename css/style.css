@@ -692,7 +692,7 @@
 
   .form-control {
     border-radius: var(--border-radius-small);
-    margin: 1.3rem 0;
+    margin: 1rem 0;
   }
 
   .form-control:focus {
