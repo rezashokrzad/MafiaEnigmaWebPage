@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/aos.css">
 		<link rel="stylesheet" href="css/style.css">	
-
+		
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-48x48.png">
@@ -24,13 +24,17 @@
 		<!-- Apple Touch Icon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
-			
 	</head>
 	<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
 		<nav class="navbar navbar-expand-lg fixed-top">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">MafiaEnigma</a>
+				<div class="col-md-1 py-1">
+					<a href="index.html">
+					<img src="images/class/mafiaenigmalogo.png" alt="Class" width="50px" height="50px">
+					</a>
+				</div>
+				<a class="navbar-brand" href="index.html"><span style="color: #dc3545;">M</span>afiaEnigma</a>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -43,28 +47,30 @@
 						</li>
 
 						<li class="nav-item">
-							<a href="#about" class="nav-link smoothScroll" title="About">About</a>
+							<a href="#about" class="nav-link smoothScroll" title="About">MafiaEnigma</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="#roles" class="nav-link smoothScroll" title="Characters/Roles">Characters/Roles</a>
+							<a href="#roles" class="nav-link smoothScroll" title="Characters/Roles">Roles Explained</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="#news" class="nav-link smoothScroll" title="News/Updates">News/Updates</a>
+							<a href="#gameplay" class="nav-link smoothScroll" title="Gameplay">Gameplay</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="#contact" class="nav-link smoothScroll" title="Contact Us">Contact Us</a>
+							<a href="glossary.html" class="nav-link smoothScroll" title="Glossary"   target="_blank">Glossary</a>
 						</li>
 					</ul>
 
-					<ul class="social-icon ml-lg-3">
-						<li><a href="#" title="facebook" ><img src="images/social/hedear_mafia_enigma_facebook.png" title="facebook" alt="facebook" width="20px" height="20px"></a></li>
-						<li><a href="#" title="twitter"><img src="images/social/hedear_mafia_enigma_twitter.png" title="twitter" alt="twitter" width="20px" height="20px"></a></li>
-						<li><a href="#" title="instagram"><img src="images/social/hedear_mafia_enigma_instagram.png" title="instagram" alt="instagram" width="20px" height="20px"></a></li>
-						<li><a href="#" title="youtube"><img src="images/social/hedear_mafia_enigma_youtube.png" title="youtube" alt="youtube" width="20px" height="20px"></a></li>
-						<li><a href="#" title="Discord"><img src="images/social/hedear_mafia_enigma_discord.png" title="Discord" alt="Discord" width="20px" height="20px"></a></li>
+					<ul class="social-icon ml-lg-2">
+						<!-- <li><a href="#" title="facebook" ><img src="images/social/hedear_mafia_enigma_facebook.png" title="facebook" alt="facebook" width="20px" height="20px"></a></li> -->
+						<!-- <li><a href="#" title="twitter"><img src="images/social/hedear_mafia_enigma_twitter.png" title="twitter" alt="twitter" width="20px" height="20px"></a></li> -->
+						<li><a href="https://youtube.com/@MafiaEnigma-yn7lv?si=aMvKSaZ3uGVwc61T" title="youtube" target="_blank"><img src="images/social/hedear_mafia_enigma_youtube.png" title="youtube" alt="youtube" width="20px" height="20px"></a></li>
+						<li><a href="https://www.instagram.com/mafiaenigma/" title="instagram" target="_blank"><img src="images/social/hedear_mafia_enigma_instagram.png" title="instagram" alt="instagram" width="20px" height="20px"></a></li>
+						<li><a href="https://www.tiktok.com/@mafiaenigma_" title="tiktok"  target="_blank"><img src="images/social/hedear_mafia_enigma_tiktok.png" title="tiktok" alt="tiktok" width="20px" height="20px"></a></li>
+						<li><a href="https://medium.com/@greenrighthands" title="medium"  target="_blank"><img src="images/social/hedear_mafia_enigma_medium.png" title="medium" alt="medium" width="20px" height="20px"></a></li>
+						<!-- <li><a href="#" title="Discord"><img src="images/social/hedear_mafia_enigma_discord.png" title="Discord" alt="Discord" width="20px" height="20px"></a></li> -->
 						
 					</ul>
 				</div>
@@ -73,28 +79,7 @@
 		</nav>
 
 <!--------------------------------------- body ---------------------------------------->				
-		<script>
-		// JavaScript function here
-		function toggleMore(sectionId) {
-			var moreText = document.getElementById(sectionId);
-			var buttonText = document.querySelector('button[onclick="toggleMore(\'' + sectionId + '\')"]');
 
-			if (moreText.style.display === "none") {
-				moreText.style.display = "block";
-				buttonText.textContent = "Less";
-				buttonText.style.backgroundColor = '#dc3545';
-			} else {
-				moreText.style.display = "none";
-				buttonText.textContent = "More";
-				buttonText.style.backgroundColor = '#dc3545';
-			}
-			// Reset the button color after 3 seconds
-			setTimeout(function() {
-            buttonText.style.backgroundColor = '';
-			buttonText.blur();
-        	}, 1000); // 1000 milliseconds = 1 seconds
-		}
-		</script>
 
 
 		<section class="section pt-5 mt-5">
@@ -343,7 +328,7 @@
 					</div> 
 					
 
-					<!----------------------------------Dr. Lecter------------------------------->
+					<!-- --------------------------------Dr. Lecter-----------------------------
 					<div class="col-12">
 						<div class="class-thumb video-spacing">                                   
 							<div class="card gray-dark">
@@ -420,71 +405,72 @@
 					
 				</div>
 			</div>
-		</section>
+		</section> -->
 <!--------------------------------------- Footer ---------------------------------------->				
-	  	<footer class="site-footer">
-			<div class="container">
-				<div class="row">
-					<div class="ml-auto col-lg-4 col-md-4 col-12 pr-3">
-							 <div class="row">
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="ml-auto col-lg-4 col-md-4 col-12 pr-3 text-left">
+							<div class="row">
 								<div class="pl-0 col-12">
-									<p class="copyright-text pb-5"><a class="navbar-brand" href="index.html">MafiaEnigma</a></p>
+									<p class="copyright-text pb-0">MafiaEnigma Press</p>
 									<div class="position-relative pb-5">
 										<input type="text" class="form-control pr-5 py-4 rounded-pill email" placeholder="Email Address">
 										<button class="btn-search"><i class="fa fa-chevron-right"></i></button>
 									</div>
-									<p>Ready to explore? <a href="#" class="pl-5"><img src="images/google-play-button.png" title="google play" alt="google play" class="img-fluid bordered rounded border-white" width="160px"></a></p>
+									<p>Ready to explore? <a href="#" class="pl-5" target="_blank"><img src="images/google-play-button.png" title="google play" alt="google play" class="img-fluid bordered rounded border-white" width="160px"></a></p>
 								</div>
 							</div>
-					</div>
-					
-					<div class="ml-auto col-lg-8 col-md-8 col-12">
-						<div class="row">
-							<div class="mx-auto col-lg-4 col-md-4 col-12">
-								<p class="text-danger pb-2">Quick Links</p>
-								<ul class="list">
-									<li><a href="" title="Home">Home</a></li>
-									<li><a href="about.html" title="About">About</a></li>
-									<li><a href="" title="Characters/Roles">Characters/Roles</a></li>
-									<li><a href="" title="Community">Community</a></li>
-									<li><a href="" title="News/Updates" >News/Updates</a></li>
-								</ul>
-							</div>
-								
-							<div class="mx-auto col-lg-4 col-md-4 col-12">
-								<p class="text-danger pb-2">Support and legals</p>
-								<ul class="list">
-									<li><a href="" title="FAQ/Support">FAQ/Support</a></li>
-									<li><a href="Privacy Policy.html" title="Privacy Policy">Privacy Policy</a></li>
-									<li><a href="" title="Terms of Services">Terms of Services</a></li>
-									<li><a href="" title="Contact Us">Contact Us</a></li>
-								</ul>
-							</div>
-								
-							<div class="mx-auto col-lg-4 col-md-4 col-12">
-								<p class="text-danger pb-2 text-bold">Social media and Community</p>
-								<ul class="list">
-									<li><a href="#" title="facebook"><img src="images/social/footer_mafia_enigma_facebook.png" title="facebook" alt="facebook" width="20px" height="20px" class="mr-2">Facebook</a></li>
-									<li><a href="#" title="twitter"><img src="images/social/footer_mafia_enigma_twitter.png" title="twitter" alt="twitter" width="20px" height="20px" class="mr-2">X</a></li>
-									<li><a href="#" title="instagram"><img src="images/social/footer_mafia_enigma_instagram.png" title="instagram" alt="instagram" width="20px" height="20px" class="mr-2">Instagram</a></li>
-									<li><a href="#" title="youtube"><img src="images/social/footer_mafia_enigma_youtube.png" title="youtube" alt="youtube" width="20px" height="20px" class="mr-2">Youtube</a></li>
-									<li><a href="#" title="Discord"><img src="images/social/footer_mafia_enigma_discord.png" title="Discord" alt="Discord" width="20px" height="20px" class="mr-2">Discord</a></li>
-								</ul>
+						</div>
+						
+						<div class="ml-auto col-lg-8 col-md-8 col-12">
+							<div class="row">
+								<div class="mx-auto col-lg-4 col-md-4 col-12">
+									<p class="text-danger pb-2 text-left">Quick Access</p>
+									<ul class="list text-left">
+										<li><a href="about.html" title="About" target="_blank">About Us</a></li>
+										<li><a href="roles.html" title="Roles Explained" target="_blank">Roles Explained</a></li>
+										<li><a href="" title="Home">Gameplay Glossary</a></li>
+										<li><a href="" title="Community" target="_blank">Community</a></li>
+										<li><a href="https://youtube.com/@MafiaEnigma-yn7lv?si=aMvKSaZ3uGVwc61T" title="Gameplay" target="_blank">Gameplay</a></li>
+									</ul>
+								</div>
+									
+								<div class="mx-auto col-lg-4 col-md-4 col-12">
+									<p class="text-danger pb-2 text-left">Support & legals</p>
+									<ul class="list text-left">
+										<li><a href="" title="FAQ/Support">FAQ</a></li>
+										<li><a href="Privacy Policy.html" title="Privacy Policy" target="_blank">Privacy Policy</a></li>
+										<li><a href="" title="Terms of Services">Terms of Services</a></li>
+										<li><a href="about.html" title="Contact Us">Contact Us</a></li>
+									</ul>
+								</div>
+									
+								<div class="mx-auto col-lg-4 col-md-4 col-12">
+									<p class="text-danger pb-2 text-bold text-left">Social media & Community</p>
+									<ul class="list text-left">
+										<!-- <li><a href="#" title="facebook"><img src="images/social/footer_mafia_enigma_facebook.png" title="facebook" alt="facebook" width="20px" height="20px" class="mr-2">Facebook</a></li> -->
+										<!-- <li><a href="#" title="twitter"><img src="images/social/footer_mafia_enigma_twitter.png" title="twitter" alt="twitter" width="20px" height="20px" class="mr-2">X</a></li> -->
+										<li><a href="https://youtube.com/@MafiaEnigma-yn7lv?si=aMvKSaZ3uGVwc61T" title="youtube" target="_blank"><img src="images/social/footer_mafia_enigma_youtube.png" title="youtube" alt="youtube" width="20px" height="20px" class="mr-2">Youtube</a></li>
+										<li><a href="https://www.instagram.com/mafiaenigma/" title="instagram" target="_blank"><img src="images/social/footer_mafia_enigma_instagram.png" title="instagram" alt="instagram" width="20px" height="20px" class="mr-2">Instagram</a></li>
+										<li><a href="https://www.tiktok.com/@mafiaenigma_" title="TikTok" target="_blank"><img src="images/social/footer_mafia_enigma_tiktok.png" title="Tiktok" alt="TikTok" width="20px" height="20px" class="mr-2">TikTok</a></li>
+										<li><a href="https://medium.com/@greenrighthands" title="medium"  target="_blank"><img src="images/social/footer_mafia_enigma_medium.png" title="medium" alt="medium" width="20px" height="20px" class="mr-2">Medium</a></li>
+										<!-- <li><a href="#" title="Discord"><img src="images/social/footer_mafia_enigma_discord.png" title="Discord" alt="Discord" width="20px" height="20px" class="mr-2">Discord</a></li> -->
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
 						
-					
-					<div class="col-12 text-center copyright">
-						<a href="https://mafiaenigma.com/">Copyright 2024  MafiaEnigma</a></p>
+						<div class="col-12 text-center copyright">
+							<a href="https://mafiaenigma.com/">Copyright 2024  MafiaEnigma</a></p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>    
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script> 
-		<script src="js/aos.js"></script>
-		<script src="js/smoothscroll.js"></script>
-		<script src="js/custom.js"></script>	 
+			</footer>    
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script> 
+			<script src="js/aos.js"></script>
+			<script src="js/smoothscroll.js"></script>
+			<script src="js/custom.js"></script>	 
 	</body>
 </html>

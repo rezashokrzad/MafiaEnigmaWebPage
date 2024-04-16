@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MafiaEnigma</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/aos.css">
+		<link rel="stylesheet" href="css/style.css">	
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-48x48.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!-- Apple Touch Icon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+	</head>
+	
+	<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<div class="col-md-1 py-1">
+					<a href="index.html">
+					<img src="images/class/mafiaenigmalogo.png" alt="Class" width="50px" height="50px">
+					</a>
+				</div>
+				<a class="navbar-brand" href="index.html"><span style="color: #dc3545;">M</span>afiaEnigma</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-lg-auto">
+						<li class="nav-item">
+							<a href="#home" class="nav-link smoothScroll" title="Home" >Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#about" class="nav-link smoothScroll" title="About">MafiaEnigma</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#roles" class="nav-link smoothScroll" title="Characters/Roles">Roles Explained</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#gameplay" class="nav-link smoothScroll" title="Gameplay">Gameplay</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="glossary.html" class="nav-link smoothScroll" title="Glossary"   target="_blank">Glossary</a>
+						</li>
+					</ul>
+
+					<ul class="social-icon ml-lg-2">
+						<!-- <li><a href="#" title="facebook" ><img src="images/social/hedear_mafia_enigma_facebook.png" title="facebook" alt="facebook" width="20px" height="20px"></a></li> -->
+						<!-- <li><a href="#" title="twitter"><img src="images/social/hedear_mafia_enigma_twitter.png" title="twitter" alt="twitter" width="20px" height="20px"></a></li> -->
+						<li><a href="https://youtube.com/@MafiaEnigma-yn7lv?si=aMvKSaZ3uGVwc61T" title="youtube" target="_blank"><img src="images/social/hedear_mafia_enigma_youtube.png" title="youtube" alt="youtube" width="20px" height="20px"></a></li>
+						<li><a href="https://www.instagram.com/mafiaenigma/" title="instagram" target="_blank"><img src="images/social/hedear_mafia_enigma_instagram.png" title="instagram" alt="instagram" width="20px" height="20px"></a></li>
+						<li><a href="https://www.tiktok.com/@mafiaenigma_" title="tiktok"  target="_blank"><img src="images/social/hedear_mafia_enigma_tiktok.png" title="tiktok" alt="tiktok" width="20px" height="20px"></a></li>
+						<li><a href="https://medium.com/@greenrighthands" title="medium"  target="_blank"><img src="images/social/hedear_mafia_enigma_medium.png" title="medium" alt="medium" width="20px" height="20px"></a></li>
+						<!-- <li><a href="#" title="Discord"><img src="images/social/hedear_mafia_enigma_discord.png" title="Discord" alt="Discord" width="20px" height="20px"></a></li> -->
+						
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		
+		<section class="section pt-5 mt-5">
+			<div class="container gray-dark">
+				<div class="row">
+					<div class="mt-lg-5 mb-lg-5 mb-4 mx-auto col-12">
+						<div class="col-lg-12 col-12 text-center mb-6">
+							<h2 class="mb-4 text-danger">Master Mafia: Essential Communication Glossary</h2>
+						</div>
+						<div class="col-12">
+							<div class="class-thumb video-spacing">
+								<div class="card gray-dark">
+									<div class="row no-gutters">
+										<div class="col-md-12">
+											<div class="card-body">
+												<button onclick="toggleMore('essentialStarters', {show: '10 Essential Starters', hide: '10 Essential Starters'}) " class="glossary-button">
+													<b>10 Essential Starters</b>
+												</button>
+												<div id="essentialStarters" class="more-content" style="display: none;">
+													<p class="text-white">
+														<b>Accusations:</b><br>
+														I suspect [Player] is Mafia because of [reason].<br>
+														<b>Defense:</b><br>
+														I'm not Mafia, I was with [Player/doing an activity] at that time.<br>
+														<b>Observation:</b><br>
+														Did anyone notice [Player] was quiet during the vote?<br>
+														<b>Alliance Building:</b><br>
+														I trust [Player]; their actions seem honest.<br>
+														<b>Strategy Discussion:</b><br>
+														Let’s focus on players who've been too quiet.<br>
+														<b>Role Revelation:</b><br>
+														I'm a Villager. I have no special powers.<br>
+														<b>Voting:</b><br>
+														I think we should vote for [Player]; their story doesn't add up.<br>
+														<b>Suspicion Expression:</b><br>
+														Something about [Player’s] story seems off to me.<br>
+														<b>Agreement:</b><br>
+														I agree with [Player], that's a good point.<br>
+														<b>Disagreement:</b><br>
+														I disagree, we need more evidence before we decide.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="class-thumb video-spacing">
+								<div class="card gray-dark">
+									<div class="row no-gutters">
+										<div class="col-md-12">
+											<div class="card-body">
+												<button onclick="toggleMore('slangGameTalk', {show: '20 Slang: Game Talk', hide: '20 Slang: Game Talk'}) " class="glossary-button">
+													<b>20 Slang: Game Talk</b>
+												</button>
+												<div id="slangGameTalk" class="more-content" style="display: none;">
+													<p class="text-white">
+														<b>Sus:</b> Short for suspicious, indicating someone seems untrustworthy.<br>
+														<b>Big brain play:</b> A smart or strategic move.<br>
+														<b>On the DL:</b> Keeping something on the down low; secret or hidden.<br>
+														<b>Ghosting:</b> Suddenly stopping all communication, could refer to someone being unexpectedly quiet during the game.<br>
+														<b>Spill the tea:</b> Sharing the juicy details or secrets.<br>
+														<b>Salty:</b> Being upset or bitter, especially after being outplayed.<br>
+														<b>No cap:</b> No lie, telling the truth.<br>
+														<b>Flex:</b> To show off; could be used when a player makes a good move.<br>
+														<b>Throwing shade:</b> Subtly expressing contempt or disrespect.<br>
+														<b>Low-key:</b> Understated or wanting to keep something quiet.<br>
+														<b>Snatched:</b> Looking good or on point; could refer to a well-played strategy.<br>
+														<b>Yeet:</b> To throw away; can be used when voting someone out.<br>
+														<b>Simp:</b> Someone showing excessive sympathy or attention.<br>
+														<b>Hype:</b> A lot of excitement and enthusiasm around something.<br>
+														<b>Squad goals:</b> The epitome of what friends or teammates should be.<br>
+														<b>Lit:</b> Amazing or exciting; could describe a thrilling round of the game.<br>
+														<b>Savage:</b> Acting without regard, or brutally honest; could be a ruthless play in-game.<br>
+														<b>Woke:</b> Being aware, could refer to being onto someone's deceptive game.<br>
+														<b>Dead:</b> Hilariously funny; could also refer to eliminated players in a light-hearted manner.<br>
+														<b>FOMO:</b> Fear of missing out; the anxiety that an exciting event may currently be happening elsewhere, often aroused by posts seen on social media.<br>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-12">
+							<div class="class-thumb video-spacing">
+								<div class="card gray-dark">
+									<div class="row no-gutters">
+										<div class="col-md-12">
+											<div class="card-body">
+												<button onclick="toggleMore('AdvancedGameplayCommunications', {show: '30 Advanced Gameplay Communications', hide: '30 Advanced Gameplay Communications'}) " class="glossary-button">
+													<b>30 Advanced Gameplay Communications</b>
+												</button>
+												<div id="AdvancedGameplayCommunications" class="more-content" style="display: none;">
+													<p class="text-white">
+														<b>Accusations:</b><br>
+														"Your alibi doesn't add up. Explain yourself!"<br>
+														"I noticed you've been overly defensive, why is that?"<br>
+														"That move last night? Totally sus. Care to explain?"<br>
+														<b>Defense:</b><br>
+														"Check my game history; I’ve been consistently loyal."<br>
+														"I was busy helping the town. I have witnesses!"<br>
+														"Why would I target them if I were Mafia? Think about it."<br>
+														<b>Observation:</b><br>
+														"Isn’t it odd how quickly they jumped on that vote?"<br>
+														"This person has switched sides too often. Let’s not ignore that."<br>
+														"Notice how they evade direct questions about their role?"<br>
+														<b>Alliance Building:</b><br>
+														"We think alike. Let's team up and figure this out."<br>
+														"Join me next round; I believe you're innocent."<br>
+														"Together, we can protect the town. Trust me."<br>
+														<b>Strategy Discussion:</b><br>
+														"Let's keep a low profile this round and see who slips up."<br>
+														"We should double-check everyone’s past actions before voting."<br>
+														"Maybe we’re missing a pattern here. Let’s regroup."<br>
+														<b>Role Revelation:</b><br>
+														"I’m the Doctor. I can prove it in the next night phase."<br>
+														"Trust me, I'm the Sheriff. Here’s my evidence."<br>
+														"As a Villager, I have nothing but my observations, but they’re sharp."<br>
+														<b>Voting:</b><br>
+														"I vote we skip this round to gather more intel."<br>
+														"It’s risky, but we might need to force a tie to reveal true colors."<br>
+														"Are we sure? A wrong vote could cost us the game."<br>
+														<b>Suspicion Expression:</b><br>
+														"I'm just saying, there are too many coincidences with their story."<br>
+														"They’ve been right a little too often. Could be insider info."<br>
+														"Something’s off. They knew too much, too soon."<br>
+														<b>Agreement:</b><br>
+														"Exactly my thoughts! We’re on the same page."<br>
+														"That’s the most logical explanation yet."<br>
+														"I second that. It's the only move that makes sense now."<br>
+														<b>Disagreement:</b><br>
+														"I see your point, but we can’t ignore the other possibilities."<br>
+														"That’s a stretch, and here’s why..."<br>
+														"I’m not convinced. We need a better strategy."<br>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-12">
+							<div class="class-thumb video-spacing">
+								<div class="card gray-dark">
+									<div class="row no-gutters">
+										<div class="col-md-12">
+											<div class="card-body">
+												<button onclick="toggleMore('ExpertCommunicationTactics', {show: '60 Expert Communication Tactics', hide: '60 Expert Communication Tactics'}) " class="glossary-button">
+													<b>60 Expert Communication Tactics</b>
+												</button>
+												<div id="ExpertCommunicationTactics" class="more-content" style="display: none;">
+													<p class="text-white">
+														<b>Accusations:</b><br>
+														"I think you're steering the discussion. Mafia much?"<br>
+														"Why so eager to vote without a proper discussion?"<br>
+														"I’ve caught you in a lie; explain or face the vote."<br>
+														"Your tactics scream Mafia. Got any excuses?"<br>
+														"Acting too innocent. What’s your real role?"<br>
+														"You’ve been manipulating the votes. Explain now!"<br>
+														<b>Defense:</b><br>
+														"I’ve been framed! Check the facts again."<br>
+														"Misunderstood again. I’m here for the town, not against it."<br>
+														"I skipped last night's action for a reason. Here's why."<br>
+														"You’ve got it all wrong, here’s what actually happened."<br>
+														"I’m being targeted here. Don’t fall for it!"<br>
+														"Listen, jumping on me without proof is what Mafia would do."<br>
+														<b>Observation:</b><br>
+														"Two votes in a row? That pattern seems planned."<br>
+														"Their silence after the accusation is telling."<br>
+														"Always last to vote—strategizing much?"<br>
+														"Has anyone noticed they never self-nominate?"<br>
+														"Odd how you deflect questions about your night actions."<br>
+														"Look who’s talking a lot today. Feeling the heat?"<br>
+														<b>Alliance Building:</b><br>
+														"I need someone sharp. You in for a team-up?"<br>
+														"Our goals align. Let’s clear out the Mafia."<br>
+														"Stick with me tonight, and I’ll prove my loyalty."<br>
+														"Your insights are good. Let’s collaborate."<br>
+														"We’re stronger together against the Mafia."<br>
+														"You call the shots, I’ll provide support."<br>
+														<b>Strategy Discussion:</b><br>
+														"Splitting votes could reveal the Mafia’s intentions."<br>
+														"Time for a silent round to see who tries to take control."<br>
+														"Let’s not rush. Observing one more night could help."<br>
+														"Push for answers now, they’re almost slipping."<br>
+														"We need a decoy plan to catch the Mafia off guard."<br>
+														"Focus on those who’ve escaped the spotlight."<br>
+														<b>Role Revelation:</b><br>
+														"I can verify someone tonight, let’s decide who."<br>
+														"I’ll show my hand: I’m the Cop, here’s the proof."<br>
+														"If I reveal, I’m a target. Trust me for now."<br>
+														"Revealing could be dangerous, but I’m the Doctor."<br>
+														"I’m an Investigator. I know who's lying."<br>
+														"Trust me as the Guardian; I protect the innocent."<br>
+														<b>Voting:</b><br>
+														"Hold up, let’s think this through before voting."<br>
+														"A strategic vote now could turn the tide."<br>
+														"Consider this a tactical vote, not personal."<br>
+														"Vote wisely, or we might hand the game to Mafia."<br>
+														"This vote determines our fate. Choose carefully."<br>
+														"Don’t follow the crowd. Think independently this round."<br>
+														<b>Suspicion Expression:</b><br>
+														"Way too convenient, don’t you think?"<br>
+														"I’m just not buying what you’re selling."<br>
+														"Your story changes every round. Stick to one!"<br>
+														"This is too smooth. You’re prepped for this."<br>
+														"Anyone else get the feeling they’re being played?"<br>
+														"They’re a bit too calm, considering the chaos."<br>
+														<b>Agreement:</b><br>
+														"Solid point, couldn’t have said it better!"<br>
+														"That lines up with what I’ve seen, too."<br>
+														"Absolutely, your logic is on point."<br>
+														"You’re leading us right. I’m with you."<br>
+														"Right call! That’s how we win."<br>
+														"I back that. It’s our best shot."<br>
+														<b>Disagreement:</b><br>
+														"I respect your view, but here’s another angle."<br>
+														"That’s one way to see it, but consider this."<br>
+														"We’re not on the same page. Here’s why."<br>
+														"Might be a mistake. Let’s pivot."<br>
+														"Hold on, your plan has flaws."<br>
+														"Not convinced. We need a backup plan."<br>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+							<a href="javascript:;return false;" title="google play"><img src="images/google-play-button.png" title="google play" alt="google play" class="img-fluid bordered rounded border-white" width="180px"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="ml-auto col-lg-4 col-md-4 col-12 pr-3 text-left">
+						<div class="row">
+							<div class="pl-0 col-12">
+								<p class="copyright-text pb-0">MafiaEnigma Press</p>
+								<div class="position-relative pb-5">
+									<input type="text" class="form-control pr-5 py-4 rounded-pill email" placeholder="Email Address">
+									<button class="btn-search"><i class="fa fa-chevron-right"></i></button>
+								</div>
+								<p>Ready to explore? <a href="#" class="pl-5" target="_blank"><img src="images/google-play-button.png" title="google play" alt="google play" class="img-fluid bordered rounded border-white" width="160px"></a></p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="ml-auto col-lg-8 col-md-8 col-12">
+						<div class="row">
+							<div class="mx-auto col-lg-4 col-md-4 col-12">
+								<p class="text-danger pb-2 text-left">Quick Access</p>
+								<ul class="list text-left">
+									<li><a href="about.html" title="About" target="_blank">About Us</a></li>
+									<li><a href="roles.html" title="Roles Explained" target="_blank">Roles Explained</a></li>
+									<li><a href="" title="Home">Gameplay Glossary</a></li>
+									<li><a href="" title="Community" target="_blank">Community</a></li>
+									<li><a href="https://youtube.com/@MafiaEnigma-yn7lv?si=aMvKSaZ3uGVwc61T" title="Gameplay" target="_blank">Gameplay</a></li>
+								</ul>
+							</div>
+								
+							<div class="mx-auto col-lg-4 col-md-4 col-12">
+								<p class="text-danger pb-2 text-left">Support & legals</p>
+								<ul class="list text-left">
+									<li><a href="" title="FAQ/Support">FAQ</a></li>
+									<li><a href="Privacy Policy.html" title="Privacy Policy" target="_blank">Privacy Policy</a></li>
+									<li><a href="" title="Terms of Services">Terms of Services</a></li>
+									<li><a href="about.html" title="Contact Us">Contact Us</a></li>
+								</ul>
+							</div>
+								
+							<div class="mx-auto col-lg-4 col-md-4 col-12">
+								<p class="text-danger pb-2 text-bold text-left">Social media & Community</p>
+								<ul class="list text-left">
+									<!-- <li><a href="#" title="facebook"><img src="images/social/footer_mafia_enigma_facebook.png" title="facebook" alt="facebook" width="20px" height="20px" class="mr-2">Facebook</a></li> -->
+									<!-- <li><a href="#" title="twitter"><img src="images/social/footer_mafia_enigma_twitter.png" title="twitter" alt="twitter" width="20px" height="20px" class="mr-2">X</a></li> -->
+									<li><a href="https://youtube.com/@MafiaEnigma-yn7lv?si=aMvKSaZ3uGVwc61T" title="youtube" target="_blank"><img src="images/social/footer_mafia_enigma_youtube.png" title="youtube" alt="youtube" width="20px" height="20px" class="mr-2">Youtube</a></li>
+									<li><a href="https://www.instagram.com/mafiaenigma/" title="instagram" target="_blank"><img src="images/social/footer_mafia_enigma_instagram.png" title="instagram" alt="instagram" width="20px" height="20px" class="mr-2">Instagram</a></li>
+									<li><a href="https://www.tiktok.com/@mafiaenigma_" title="TikTok" target="_blank"><img src="images/social/footer_mafia_enigma_tiktok.png" title="Tiktok" alt="TikTok" width="20px" height="20px" class="mr-2">TikTok</a></li>
+									<li><a href="https://medium.com/@greenrighthands" title="medium"  target="_blank"><img src="images/social/footer_mafia_enigma_medium.png" title="medium" alt="medium" width="20px" height="20px" class="mr-2">Medium</a></li>
+									<!-- <li><a href="#" title="Discord"><img src="images/social/footer_mafia_enigma_discord.png" title="Discord" alt="Discord" width="20px" height="20px" class="mr-2">Discord</a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 text-center copyright">
+						<a href="https://mafiaenigma.com/">Copyright 2024  MafiaEnigma</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>    
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script> 
+		<script src="js/aos.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/custom.js"></script>	 
+	</body>
+</html>

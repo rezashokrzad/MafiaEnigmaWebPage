@@ -377,7 +377,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.90;
+    opacity: 0.50;
   }
 
   /*---------------------------------------
@@ -1458,9 +1458,33 @@
 }
 
 .more-button:focus {
-  outline: none; /* Removes the outline on focus */
-  
+  outline: none;
 }
+
+
+.glossary-button {
+  padding: 10px 15px;
+  min-width: 380px;
+  color: white;
+  border: none; 
+  background-color: #dc3545; 
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.glossary-button:hover {
+  background-color: #212529;
+  color: white;
+}
+
+.glossary-button:focus {
+  outline: none;
+}
+
+/* -------------------------------------------------------------------------- */
 
 /* Responsive iframe CSS */
 .responsive-iframe {
