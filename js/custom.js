@@ -66,3 +66,31 @@ function toggleMore(sectionId, buttonTexts = {show: "More", hide: "Less"}, reset
       buttonText.blur(); // Optionally remove focus from the button
   }, resetTime); // Default 1000 milliseconds = 1 second
 }
+
+//press email
+$(document).ready(function() {
+  $('#submitEmail').click(function(event) {
+    event.preventDefault();  // Prevent the default form submission behavior
+    var email = $('#emailInput').val();  // Get the email address from the input
+
+    if (email) {  // Check if the email is not empty
+      var apiUrl = 'https://mafia.mafiaenigma.com/mafia_game/v1/set_press/' + encodeURIComponent(email);
+      $.ajax({
+        url: apiUrl,  // The URL of your API endpoint
+        type: 'POST',
+        // data: JSON.stringify({ email_address: email }),
+        contentType: 'application/json; charset=utf-8',
+        success: function(response) {
+          alert('Email submitted successfully!');
+          $('#emailInput').val('');  // Clear the input field
+        },
+        error: function(xhr, status, error) {
+          var errorMsg = xhr.responseText ? xhr.responseText : "Unknown error occurred";
+          alert('Error submitting email: ' + errorMsg);
+        }
+      });
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  });
+});
