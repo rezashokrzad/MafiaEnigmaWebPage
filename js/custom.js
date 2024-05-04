@@ -71,7 +71,9 @@ function toggleMore(sectionId, buttonTexts = {show: "More", hide: "Less"}, reset
 $(document).ready(function() {
   $('#submitEmail').click(function(event) {
     event.preventDefault();  // Prevent the default form submission behavior
+    console.log('Button clicked!');  // Debug: Log when the button is clicked
     var email = $('#emailInput').val();  // Get the email address from the input
+    console.log('Email entered: ' + email);  // Debug: Log the email entered
 
     if (email) {  // Check if the email is not empty
       var apiUrl = 'https://mafia.mafiaenigma.com/mafia_game/v1/set_press/' + encodeURIComponent(email);
@@ -85,9 +87,10 @@ $(document).ready(function() {
           $('#emailInput').val('');  // Clear the input field
         },
         error: function(xhr, status, error) {
-          var errorMsg = xhr.responseText ? xhr.responseText : "Unknown error occurred";
-          alert('Error submitting email: ' + errorMsg);
-        }
+          var errorMessage = xhr.status + ': ' + xhr.statusText
+          console.log(xhr, status, error);
+          alert('Error - ' + errorMessage);
+      }
       });
     } else {
       alert('Please enter a valid email address.');
