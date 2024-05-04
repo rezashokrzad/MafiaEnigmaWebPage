@@ -78,7 +78,7 @@ $(document).ready(function() {
     if (email) {  // Check if the email is not empty
       var apiUrl = 'https://mafia.mafiaenigma.com/mafia_game/v1/set_press/' + encodeURIComponent(email);
       $.ajax({
-        url:  '/Home/ValidatePostcode',
+        url:  apiUrl,
         type: "GET",
         async: false,
         // data: JSON.stringify({ email_address: email }),
