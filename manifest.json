@@ -1,0 +1,19 @@
+{
+    "name": "My Extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+      "https://mafia.mafiaenigma.com/",
+      "https://mafia.mafiaenigma.com/mafia_game/",
+        "https://mafia.mafiaenigma.com/mafia_game/v1/",
+        "https://mafia.mafiaenigma.com/mafia_game/v1/set_press/"
+      
+    ],
+    "web_accessible_resources": [
+        "https://mafia.mafiaenigma.com/",
+        "https://mafia.mafiaenigma.com/mafia_game/",
+        "https://mafia.mafiaenigma.com/mafia_game/v1/",
+        "https://mafia.mafiaenigma.com/mafia_game/v1/set_press/"
+      ],
+  }
+  
